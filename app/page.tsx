@@ -94,7 +94,7 @@ export default function SKVComparator() {
       }, 300)
 
       // Make request to Flask backend
-      const response = await fetch("http://localhost:5000/api/compare", {
+      const response = await fetch("https://skv-tender-backend.onrender.com/api/compare", {
         method: "POST",
         body: formData,
       })
